@@ -1,0 +1,22 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hello-yesod
+version:        0.1.0
+build-type:     Simple
+
+executable hello-yesod
+  main-is: Main.hs
+  other-modules:
+      Paths_hello_yesod
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -O3 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , text
+    , yesod
+  default-language: Haskell2010
